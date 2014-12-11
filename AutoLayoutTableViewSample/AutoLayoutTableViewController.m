@@ -22,10 +22,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.textArray = [NSMutableArray arrayWithCapacity:200];
-    NSMutableString *string = [@"" mutableCopy];
-    for (int i = 0; i < 200; i++) {
-        [string appendString:@"あ"];
+    NSString *jugem =
+    @"寿限無寿限無"
+    "五劫の擦り切れ"
+    "海砂利水魚の"
+    "水行末雲来末風来末"
+    "食う寝る処に住む処"
+    "藪ら柑子の藪柑子"
+    "パイポパイポパイポのシューリンガン"
+    "シューリンガンのグーリンダイ"
+    "グーリンダイのポンポコピーのポンポコナーの"
+    "長久命の長助";
+    
+    self.textArray = [NSMutableArray arrayWithCapacity:jugem.length];
+    for (int i = 0; i < jugem.length; i++) {
+        NSString *string = [jugem substringToIndex:i + 1];
         [_textArray addObject:[NSString stringWithFormat:@"%lu\n%@", (unsigned long)string.length, string]];
     }
    
