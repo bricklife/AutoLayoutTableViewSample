@@ -86,11 +86,11 @@
 			children = (
 				CB46B0A21A39A4EF003C71DA /* AppDelegate.h */,
 				CB46B0A31A39A4EF003C71DA /* AppDelegate.m */,
+				CB46B0A81A39A4EF003C71DA /* Main.storyboard */,
 				CB46B0C71A39A577003C71DA /* AutoLayoutTableViewController.h */,
 				CB46B0C41A39A577003C71DA /* AutoLayoutTableViewController.m */,
 				CB46B0C61A39A577003C71DA /* AutoLayoutTableViewCell.h */,
 				CB46B0C51A39A577003C71DA /* AutoLayoutTableViewCell.m */,
-				CB46B0A81A39A4EF003C71DA /* Main.storyboard */,
 				CB46B0AB1A39A4EF003C71DA /* Images.xcassets */,
 				CB46B0AD1A39A4EF003C71DA /* LaunchScreen.xib */,
 				CB46B09E1A39A4EF003C71DA /* Supporting Files */,
@@ -422,6 +422,7 @@
 				CB46B0C01A39A4EF003C71DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB46B0C11A39A4EF003C71DA /* Build configuration list for PBXNativeTarget "AutoLayoutTableViewSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +431,7 @@
 				CB46B0C31A39A4EF003C71DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
