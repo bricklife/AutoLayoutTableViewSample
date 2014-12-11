@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="AY9-qv-1nK">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6254"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Auto Layout Table View Controller-->
+        <scene sceneID="ncV-Q6-Avh">
+            <objects>
+                <tableViewController id="aUS-Ge-pbS" customClass="AutoLayoutTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="22" sectionFooterHeight="22" id="AvU-fs-eVf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="61" id="RHb-ca-83q" customClass="AutoLayoutTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RHb-ca-83q" id="jGf-Pc-wH6">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="Zft-Cn-CFb">
+                                            <rect key="frame" x="8" y="8" width="304" height="44.5"/>
+                                            <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                            <string key="text">10
+ああああああああああ</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Zft-Cn-CFb" secondAttribute="trailing" id="4Z9-WX-OCy"/>
+                                        <constraint firstItem="Zft-Cn-CFb" firstAttribute="top" secondItem="jGf-Pc-wH6" secondAttribute="topMargin" id="j5A-tZ-pwA"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Zft-Cn-CFb" secondAttribute="bottom" id="pk4-2M-TYf"/>
+                                        <constraint firstItem="Zft-Cn-CFb" firstAttribute="leading" secondItem="jGf-Pc-wH6" secondAttribute="leadingMargin" id="yQ7-Eq-Vic"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="Zft-Cn-CFb" id="JpL-cY-Mxe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aUS-Ge-pbS" id="iuy-lc-U46"/>
+                            <outlet property="delegate" destination="aUS-Ge-pbS" id="bqX-63-EKk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="QDy-jh-zh9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GhP-EE-aQE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="16"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="opN-oS-cKf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AY9-qv-1nK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SVh-Ym-Tus">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aUS-Ge-pbS" kind="relationship" relationship="rootViewController" id="k3G-UM-I3c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O2H-67-34p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="16"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
